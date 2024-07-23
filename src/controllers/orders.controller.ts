@@ -2,7 +2,7 @@ import { Controller, Get, Param } from '@nestjs/common';
 
 @Controller('orders')
 export class OrdersController {
-  @Get('orders')
+  @Get()
   getOrders() {
     return `orders`;
   }

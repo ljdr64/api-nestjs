@@ -16,7 +16,7 @@ import { Response } from 'express';
 
 @Controller('products')
 export class ProductsController {
-  @Get('products')
+  @Get()
   getProducts(
     @Query('limit') limit = 100,
     @Query('offset') offset = 0,

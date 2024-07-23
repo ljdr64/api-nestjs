@@ -2,7 +2,7 @@ import { Controller, Get, Param, Query } from '@nestjs/common';
 
 @Controller('users')
 export class UsersController {
-  @Get('users')
+  @Get()
   getUsers(
     @Query('limit') limit = 100,
     @Query('offset') offset = 0,
